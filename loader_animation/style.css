@@ -1,0 +1,153 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.parent{
+	height:100vh;
+	width:100%;
+	position:relative;
+	background-color:black;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+.a {
+	height:520px;
+	width:520px;
+	border:8px solid skyblue;
+	border-radius:50%;
+	position:relative;
+	animation:a 10s infinite linear;
+}
+
+@keyframes a{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(-360deg);
+	}
+}
+
+.a:before{
+	content:'';
+	height:250px;
+	width:50px;
+	background-color:black;
+	position:absolute;
+	top:160px;
+	left:-9px;
+}
+.a:after{
+	content:'';
+	height:250px;
+	width:50px;
+	background-color:black;
+	position:absolute;
+	top:160px;
+	right:-9px;
+}
+.b{
+	height:425px;
+	width:425px;
+	border:8px solid skyblue;
+	position:absolute;
+	border-radius:50%;
+	animation:b 10s infinite linear;
+	
+}
+	
+
+@keyframes b{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+.b:before{
+	content:'';
+	height:50px;
+	width:250px;
+	background-color:black;
+	position:absolute;
+	bottom: -8px;
+    left: 80px;
+}
+.b:after{
+	content:'';
+	height:50px;
+	width:250px;
+	background-color:black;
+	position:absolute;
+	top: -8px;
+    left: 80px;
+}
+.c{
+	height:300px;
+	width:300px;
+	border: 8px solid skyblue;
+	border-radius:50%;
+	position:absolute;
+}
+.c:before{
+	content:'';
+	height:320px;
+	width:50px;
+	background-color:black;
+	position:absolute;
+	top:-12px;
+	left:125px;
+	animation:c1 9s infinite linear;
+}
+@keyframes c1{
+	
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(180deg);
+	}
+}
+.c:after{
+	content:'';
+	height:50px;
+	width:315px;
+	background-color:black;
+	position:absolute;
+	bottom:120px;
+	right:-13px;
+	animation:c2 9s infinite linear; 
+}
+
+@keyframes c2{
+	
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(-360deg);
+	}
+}
+.parent h2{
+	font-size:30px;
+	color:white;
+	position:absolute;
+	animation:load 3s infinite linear;
+}
+@keyframes load{
+	0%{
+		color:white;
+	}
+	50%{
+		color:skyblue;
+	}
+	100%{
+		color:white;
+	}
+}
