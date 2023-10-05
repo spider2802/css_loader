@@ -1,0 +1,65 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.parent {
+	height:100vh;
+	width:100%;
+	background-color:black;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+}
+.parent .a{
+	height:250px;
+	width:250px;
+	border:4px solid transparent;
+	border-top:4px solid red;
+	border-radius:50%;
+	animation:a 3s infinite linear;
+}
+@keyframes a{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+.parent .b{
+	height:200px;
+	width:200px;
+	border:4px solid transparent;
+	border-top:4px solid blue;
+	border-radius:50%;
+	position:absolute;
+	animation:b 2s infinite linear;
+}
+
+@keyframes b{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+.parent .c{
+	height:150px;
+	width:150px;
+	border:4px solid transparent;
+	border-top:4px solid yellow;
+	border-radius:50%;
+	position:absolute;
+	animation:c 1s infinite linear;
+}
+@keyframes c{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
